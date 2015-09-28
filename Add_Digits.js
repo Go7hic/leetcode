@@ -14,7 +14,16 @@
  * @return {number}
  */
 var addDigits = function(num) {
-
+    var str = num.toString(), res = 0, tmp1, tmp2;
+       for(var i = 0; i < str.length; i++){
+            res = parseInt(str[i]) + res;
+            if(res >= 10){
+                tmp1 = parseInt(res / 10);
+                   tmp2 = res % 10;
+                  res = tmp1 + tmp2;
+            }
+        }
+    return res;
 };
 
 // 但是看到上面人家说了 Could you do it without any loop/recursion in O(1) runtime? 不要用循环呀，这下麻烦了。
@@ -24,5 +33,5 @@ var addDigits = function(num) {
  * @return {number}
  */
 var addDigits = function(num) {
-
+    return 1 + (num - 1) % 9;
 };
