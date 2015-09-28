@@ -14,11 +14,7 @@
  * @return {number}
  */
 var addDigits = function(num) {
-    var n = 0, num = number.toString().split('');
-    for(var i in num){
-        n += +num[i];
-    }
-    return n;
+
 };
 
 // 但是看到上面人家说了 Could you do it without any loop/recursion in O(1) runtime? 不要用循环呀，这下麻烦了。
@@ -28,12 +24,5 @@ var addDigits = function(num) {
  * @return {number}
  */
 var addDigits = function(num) {
-    // 如果 num大于 10，则取余数
-    var sum = num % 10 > 0 ? num % 10 : num;
-    if(num >= 10) {
-        // 向下取整
-        var rest = Math.floor(num / 10);
-        sum += addDigits(rest);
-    }
-    return sum;
+
 };
