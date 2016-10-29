@@ -1,2 +1,2 @@
-# Learn-Leetcode
-Learn leetcode
+# leetcode
+leetcode

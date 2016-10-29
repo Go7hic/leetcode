@@ -1,0 +1,48 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "Learn leetcode",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.16.0"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "ava": {
+    "concurrency": 5,
+    "failFast": true,
+    "tap": true,
+    "powerAssert": false,
+    "files": [
+      "test/**/*.js"
+    ],
+    "source": [
+      "javacript/*.js"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "babel": {
+      "presets": [
+        "es2015"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dyygtfx/leetcode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dyygtfx/leetcode/issues"
+  },
+  "homepage": "https://github.com/dyygtfx/leetcode#readme"
+}
